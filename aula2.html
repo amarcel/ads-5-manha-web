@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="teste.php" method="get">
+        <h3>Formulário HTML</h3>
+        <label for="nome">Nome completo*: </label>
+        <input type="text" name="nome" />
+
+        <br/><br/>
+        <label>Senha*: </label>
+        <input type="password" name="senha" />
+
+        <br/><br/>
+        <label>Gênero*: </label>
+        <input type="radio" name="genero" 
+            value="M"/> Masculino
+        <input type="radio" name="genero" 
+            value="F"/> Feminino
+        
+        <br/><br/>
+        <label>Condução*: </label>
+        <input type="checkbox" name="conducao"
+            value="bicicleta" /> Bicicleta
+        <input type="checkbox" name="conducao"
+            value="carro" /> Carro
+        <input type="checkbox" name="conducao"
+            value="moto" /> Moto
+
+        <input type="hidden" value="100" name="oculto" />
+
+        <br/><br/>
+        <label>Universidades*: </label>
+        <select name="unis">
+            <option value="unama">UNAMA</option>
+            <option value="ufpa">UFPA</option>
+            <option value="uepa">UEPA</option>
+            <option value="ufra">UFRA</option>
+        </select>
+
+        <br/><br/>
+        <label>Comentário*: </label>
+        <br/>
+        <textarea name="comentario" rows="5" cols="28"></textarea>
+
+        <fieldset>
+            <legend>Elementos do HTML5:</legend>
+
+            <label>Número: </label>
+            <input type="number" placeholder="digite um número" name="numero" />
+
+            <br/><br/>
+            <label>E-mail: </label>
+            <input type="email" placeholder="e-mail principal" name="email" />
+
+            <br/><br/>
+            <label>Navegadores: </label>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option name="1">Edge</option>
+                <option name="2">Chrome</option>
+                <option name="3">Firefox</option>
+            </datalist>
+
+            <br/><br/>
+            <label>Data de nascimento: </label>
+            <input type="date" name="nasc" />
+
+        </fieldset>
+
+        <br/><br/><br/>
+        <input type="submit" value="Cadastrar" />
+        <input type="button" value="Botão" />
+        <input type="reset" value="Limpar campos" />
+    </form>
+</body>
+</html>
